@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: auto 20px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  header .log_button button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #686868;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.main-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+.heading {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+}
+
+/* Sidebar styles */
+.sidebar-content {
+  width: 280px;
+  background-color: #555555;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu p {
+  color: white;
+  font-size: 1em;
+}
+
+.sidebar-menu .nav-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu .nav-menu ul li {
+  margin: 10px 0;
+}
+
+.sidebar-menu .nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.sidebar-menu .nav-menu ul li a:hover {
+  background-color: #868686;
+}
+
+.sidebar-menu .nav-menu .nav-treeview {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.sidebar-menu .nav-menu .nav-treeview .nav-item a {
+  padding: 5px;
+}
+
+.toggle-icon {
+  float: right;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-title {
+  color: #333;
+  font-size: 2em;
+  text-align: center;
+  align-items: center;
+}
+
+.dashboard-description {
+  color: #333;
+  font-size: 1.2em;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* Course list */
+.course-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.course-table {
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+.course-table th,
+.course-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+}
+
+.course-table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.course-table td {
+  background-color: #fff;
+}
+
+.edit-link {
+  color: #ffffff;
+  border: 1px solid;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #183166;
+  padding: 3px 8px;
+  margin-left: 10px;
+}
+
+.delete-link {
+  color: #ff0303;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 3px 8px;
+  margin: 10px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+
+.no-courses {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.course-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.course-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.course-form input,
+.course-form textarea,
+.course-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.update-button {
+  margin-top: 10px;
+  padding: 10px 5px;
+  background-color: #041333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Add Course */
+.add-course form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-course label {
+  margin: 5px 0;
+}
+
+.add-course input,
+.add-course select,
+.add-course textarea {
+  margin-bottom: 15px;
+  padding: 8px;
+  width: 100%;
+}
+
+.add-course input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 5px;
+  background-color: #041333;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+/* Reports */
+.reports-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.reports-content h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
+
+  .sidebar-content {
+    height: auto;
+  }
+
+  .reports-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container {
+    margin: 15px 0;
+  }
+}
